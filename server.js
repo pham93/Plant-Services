@@ -32,6 +32,7 @@ apiRouter.use(function(req, res, next){
 app.use('/api', apiRouter);
 
 //START SERVER
+//
 app.listen(configs.PORT);
 console.log('listening to ' + configs.PORT);
 

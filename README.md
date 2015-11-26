@@ -1,2 +1,2 @@
 # Plant-Services
-Restful API for the plant app.
+ Restful API for the plant app.

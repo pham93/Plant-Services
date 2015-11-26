@@ -1,7 +1,7 @@
 var configs = require('../../config');
 var Plants  = require('../models/plantSchema')
 
-// All api routes go here
+// All api routes go here!
 module.exports = function(app, express){
     var apiRouter = express.Router();
     apiRouter.get('/', function(req, res){

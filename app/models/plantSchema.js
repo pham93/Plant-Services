@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
+
 //Create a plant schema
 var plantSchema = new Schema({
        name: {type:String, required:true, index:{unique:true}},
