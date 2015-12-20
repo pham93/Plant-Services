@@ -1,4 +1,4 @@
 module.exports = {
-    'PORT':process.env.port || 8000,
+    'PORT':process.env.PORT || 5000,
     'database':process.env.PROD_MONGODB
 };
