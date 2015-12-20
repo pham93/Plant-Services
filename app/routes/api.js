@@ -30,5 +30,17 @@ module.exports = function(app, express){
                 res.json(plants);
             });
         });
+        apiRouter.get('/plants/:query', function(req, res){
+            if(req.params.query == "query"){
+                //Check if req.query is empty
+                if(Object.keys(req.query).length){
+                    res.json(req.query);
+                }
+                else
+                    res.send("NO query!");
+            }
+            else
+                res.send(req.params.query + ' is undefined!');
+        });
     return apiRouter;
 }
